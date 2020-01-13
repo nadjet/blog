@@ -2,7 +2,7 @@
 title: "Seq2seq Natural Language Generation"
 date: 2019-12-31T14:33:22+01:00
 tags: ["NLG","deep_learning","fastai"]
-draft: true
+draft: false
 ---
 
 I implemented a seq2seq Natural Language Generator using the [fastai](https://www.fast.ai/) library and the [2017 e2e NLG challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/) [dataset](https://github.com/tuetschek/e2e-dataset).

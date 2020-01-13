@@ -2,7 +2,7 @@
 title: "How to bulk upload data into Neo4j Community Edition"
 date: 2019-09-28T15:56:33+01:00
 tags: ["how_to","knowledge_graphs","neo4j"]
-draft: true
+draft: false
 ---
 
 In this post, I explain how to upload concepts and relations into Neo4J Community Edition. <!--more-->

@@ -2,7 +2,7 @@
 title: "Multi-label classification"
 date: 2019-04-05T18:07:41+01:00
 tags: ["deep_learning","fastai"]
-draft: true
+draft: false
 ---
 
 I have trained a classifier with fine tuned embedding language model that assigns content labels to basic restaurant descriptions using the [fastai](https://www.fast.ai/) library. 

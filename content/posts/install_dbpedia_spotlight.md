@@ -2,7 +2,7 @@
 title: "How to install DBPedia Spotlight Locally"
 date: 2019-09-21T06:24:17+01:00
 tags: ["how_to","knowledge_graphs","dbpedia"]
-draft: true
+draft: false
 ---
 
 In this post I explain how to install on [DBPedia Spotlight](https://www.dbpedia-spotlight.org/) on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators. <!--more-->
