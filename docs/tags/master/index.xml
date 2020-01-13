@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>master on Nadjet&#39;s NLP Stuff</title>
+    <link>https://nadjet.github.io/blog/tags/master/</link>
+    <description>Recent content in master on Nadjet&#39;s NLP Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2020 11:24:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://nadjet.github.io/blog/tags/master/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My topics for Data Science Master Students</title>
+      <link>https://nadjet.github.io/blog/posts/masters_topics/</link>
+      <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/masters_topics/</guid>
+      <description>&lt;p&gt;Here are the topics I propose to &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; students for their final project this semester (actually it is only four months). I chose mainly DBPedia/Wikipedia as the common dataset to all these projects, generally narrowing it down to a specific domain (environment, sport, jewelry) and a practical application (concept mining and visualization, question answering, natural language generation).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

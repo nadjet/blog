@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Nadjet&#39;s NLP Stuff</title>
+    <link>https://nadjet.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Nadjet&#39;s NLP Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2020 11:24:13 +0100</lastBuildDate>
+    
+	<atom:link href="https://nadjet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dbpedia</title>
+      <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
+      <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/dbpedia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>master</title>
+      <link>https://nadjet.github.io/blog/tags/master/</link>
+      <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/master/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep_learning</title>
+      <link>https://nadjet.github.io/blog/tags/deep_learning/</link>
+      <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/deep_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fastai</title>
+      <link>https://nadjet.github.io/blog/tags/fastai/</link>
+      <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/fastai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLG</title>
+      <link>https://nadjet.github.io/blog/tags/nlg/</link>
+      <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/nlg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>how_to</title>
+      <link>https://nadjet.github.io/blog/tags/how_to/</link>
+      <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/how_to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowledge_graphs</title>
+      <link>https://nadjet.github.io/blog/tags/knowledge_graphs/</link>
+      <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/knowledge_graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neo4j</title>
+      <link>https://nadjet.github.io/blog/tags/neo4j/</link>
+      <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/neo4j/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

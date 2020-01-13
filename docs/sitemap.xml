@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/dbpedia/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/master/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/masters_topics/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/</loc>
+    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/deep_learning/</loc>
+    <lastmod>2019-12-31T14:33:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/fastai/</loc>
+    <lastmod>2019-12-31T14:33:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/nlg/</loc>
+    <lastmod>2019-12-31T14:33:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/seq2seq_nlg/</loc>
+    <lastmod>2019-12-31T14:33:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</loc>
+    <lastmod>2019-09-28T15:56:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/how_to/</loc>
+    <lastmod>2019-09-28T15:56:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/knowledge_graphs/</loc>
+    <lastmod>2019-09-28T15:56:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/neo4j/</loc>
+    <lastmod>2019-09-28T15:56:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</loc>
+    <lastmod>2019-09-21T06:24:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/multi_label_classification/</loc>
+    <lastmod>2019-04-05T18:07:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/categories/</loc>
+  </url>
+  
+</urlset>
