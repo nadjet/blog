@@ -1,11 +1,11 @@
 ---
-title: "My topics for Data Science Master Students"
+title: "My projects for Data Science Master Students"
 date: 2020-01-10T11:24:13+01:00
 tags: ["dbpedia","master"]
 draft: false
 ---
 
-Here are the topics I propose to [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) students for their final project this semester (actually it is only four months). I chose mainly DBPedia/Wikipedia as the common dataset to all these projects, generally narrowing it down to a specific domain (environment, sport, jewelry) and a practical application (concept mining and visualization, question answering, natural language generation).
+Here are the projects I propose to [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) students for their final project this semester. They ranges from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.
 
 <!--more-->
 
