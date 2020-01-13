@@ -14,14 +14,14 @@
     "@type": "WebSite",
     "name": "Nadjet\x27s NLP Stuff",
     
-    "url": "https:\/\/nadjet.github.io\/blog"
+    "url": "https:\/\/nadjet.github.io\/blog\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/nadjet.github.io\/blog"
+  "url": "https:\/\/nadjet.github.io\/blog\/"
   
   
   
@@ -36,7 +36,7 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/nadjet.github.io\/blog",
+          "@id": "https:\/\/nadjet.github.io\/blog\/",
           "name": "home"
         }
     },{
@@ -58,18 +58,18 @@
   "headline": "How to install DBPedia Spotlight Locally",
   "description" : "In this post I explain how to install on DBPedia Spotlight on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators.\n",
   "inLanguage" : "en",
-  "wordCount":  110 ,
+  "wordCount":  122 ,
   "datePublished" : "2019-09-21T06:24:17",
   "dateModified" : "2019-09-21T06:24:17",
-  "image" : "https:\/\/nadjet.github.io\/blog",
+  "image" : "https:\/\/nadjet.github.io\/blog\/",
   "keywords" : [ "how_to, knowledge_graphs, dbpedia" ],
   "mainEntityOfPage" : "https:\/\/nadjet.github.io\/blog\/posts\/install_dbpedia_spotlight\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/nadjet.github.io\/blog",
+    "name" : "https:\/\/nadjet.github.io\/blog\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/nadjet.github.io\/blog",
+        "url" : "https:\/\/nadjet.github.io\/blog\/",
         "height" :  60 ,
         "width" :  60
     }
@@ -106,7 +106,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://nadjet.github.io/blog">Nadjet&#39;s NLP Stuff</a>
+      <a class="navbar-brand" href="https://nadjet.github.io/blog/">Nadjet&#39;s NLP Stuff</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -217,22 +217,23 @@
         <p>In this post I explain how to install on <a href="https://www.dbpedia-spotlight.org/">DBPedia Spotlight</a> on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators.</p>
 <p>Download the jar from <a href="https://sourceforge.net/projects/dbpedia-spotlight/files/spotlight/">here</a> and the English model from <a href="https://sourceforge.net/projects/dbpedia-spotlight/files/2016-10/en/model/">here</a>.</p>
 <p>Untar the English model: <code>tar xzf en.tar.gz</code></p>
-<p>Run with Java 1.8 with enough RAM, by typing in:</p>
+<p>Run with Java 1.8 with enough RAM, by typing in the following command:</p>
 <pre><code>java -Xms8g -jar dbpedia-spotlight-nightly-build.jar /path/to/model/en http://localhost:2222/rest
-</code></pre><p>You will get a message that says:</p>
+</code></pre><p>(assuming you downloaded a jar of that name)</p>
+<p>You will get a message that says:</p>
 <pre><code>  Server started in /execution/path listening on http://localhost:2222/rest
 </code></pre><p>Now you can call DBPedia Spotlight locally, for example:</p>
-<pre><code>curl http://localhost:2222/rest/candidates --data-urlencode &quot;text=The president of United States&quot; -confidence=0&quot; --data &quot;support=0&quot;
+<pre><code>curl http://localhost:2222/rest/candidates --data-urlencode &quot;text=The president of United States&quot; --data &quot;confidence=0&quot;  --data &quot;support=0&quot;
 </code></pre>
 
         
           <div class="blog-tags">
             
-              <a href="https://nadjet.github.io/blog/tags/how_to/">how_to</a>&nbsp;
+              <a href="https://nadjet.github.io/blog//tags/how_to/">how_to</a>&nbsp;
             
-              <a href="https://nadjet.github.io/blog/tags/knowledge_graphs/">knowledge_graphs</a>&nbsp;
+              <a href="https://nadjet.github.io/blog//tags/knowledge_graphs/">knowledge_graphs</a>&nbsp;
             
-              <a href="https://nadjet.github.io/blog/tags/dbpedia/">dbpedia</a>&nbsp;
+              <a href="https://nadjet.github.io/blog//tags/dbpedia/">dbpedia</a>&nbsp;
             
           </div>
         
@@ -283,7 +284,7 @@
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://nadjet.github.io/blog">Nadjet&#39;s NLP Stuff</a>
+            <a href="https://nadjet.github.io/blog/">Nadjet&#39;s NLP Stuff</a>
           
         </p>
         

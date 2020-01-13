@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>My topics for Data Science Master Students</title>
+      <title>My projects for Data Science Master Students</title>
       <link>https://nadjet.github.io/blog/posts/masters_topics/</link>
       <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
       
       <guid>https://nadjet.github.io/blog/posts/masters_topics/</guid>
-      <description>&lt;p&gt;Here are the topics I propose to &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; students for their final project this semester (actually it is only four months). I chose mainly DBPedia/Wikipedia as the common dataset to all these projects, generally narrowing it down to a specific domain (environment, sport, jewelry) and a practical application (concept mining and visualization, question answering, natural language generation).&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here are the projects I propose to &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; students for their final project this semester. They ranges from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.&lt;/p&gt;</description>
     </item>
     
   </channel>
