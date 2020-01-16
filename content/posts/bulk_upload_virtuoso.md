@@ -5,6 +5,6 @@ tags: ["virtuoso","dbpedia","geonames","knowledge_graphs"]
 draft: false
 ---
 
-In this post, I explain how to setup DBPedia and Geonames locally on Virtuoso Triplestore.
+In this post, I explain how to setup DBPedia and Geonames locally on Virtuoso Triplestore. <!--more-->
 
 Here is the link to the post on [medium](https://medium.com/@nadjetba/how-to-setup-dbpedia-and-geonames-on-openlink-virtuoso-f203321fd0fe).
