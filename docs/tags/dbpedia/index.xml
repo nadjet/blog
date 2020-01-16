@@ -21,6 +21,25 @@
     </item>
     
     <item>
+      <title>Mining and Geovisualization of Domain Specific DBPedia Concepts</title>
+      <link>https://nadjet.github.io/blog/posts/concept_mining_environment/</link>
+      <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/concept_mining_environment/</guid>
+      <description>&lt;p&gt;I extracted domain specific concepts from DBPedia and showed them on an interactive map of the world. The geolocalization was done using Geonames. This was a fun project to do.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up DBPedia/Geonames on OpenLink Virtuoso</title>
+      <link>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</link>
+      <pubDate>Thu, 07 Nov 2019 20:21:58 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</guid>
+      <description>In this post, I explain how to setup DBPedia and Geonames locally on Virtuoso Triplestore.
+Here is the link to the post on medium.</description>
+    </item>
+    
+    <item>
       <title>How to install DBPedia Spotlight Locally</title>
       <link>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</link>
       <pubDate>Sat, 21 Sep 2019 06:24:17 +0100</pubDate>
