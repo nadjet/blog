@@ -9,4 +9,4 @@ I extracted domain specific concepts from DBPedia and showed them on an interact
 
 The demo is available [here](https://nadjet.github.io/environmental_issues/).
 
-Here is the link to the post on [medium] where I explain how I did it(https://medium.com/@nadjetba/mining-and-visualizing-dbpedia-environmental-issues-6ecc31ce6a26).
+Here is the link to the post on [medium](https://medium.com/@nadjetba/mining-and-visualizing-dbpedia-environmental-issues-6ecc31ce6a26) where I explain how I did it.
