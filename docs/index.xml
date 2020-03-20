@@ -6,10 +6,19 @@
     <description>Recent content on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2020 11:24:13 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 15:56:33 +0100</lastBuildDate>
     
 	<atom:link href="https://nadjet.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Uploading pre-existing datasets in Neo4j: lessons learnt</title>
+      <link>https://nadjet.github.io/blog/posts/neo4j_olympic/</link>
+      <pubDate>Thu, 19 Mar 2020 15:56:33 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/neo4j_olympic/</guid>
+      <description>&lt;p&gt;Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &amp;ldquo;toy&amp;rdquo; dataset. Here is what I learnt from those exercises.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>My projects for Data Science Master Students</title>
