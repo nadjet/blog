@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nadjet.github.io/blog/tags/cypher/</loc>
-    <lastmod>2020-03-19T15:56:33+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nadjet.github.io/blog/</loc>
-    <lastmod>2020-03-19T15:56:33+01:00</lastmod>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nadjet.github.io/blog/tags/neo4j/</loc>
-    <lastmod>2020-03-19T15:56:33+01:00</lastmod>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/neo4j_gembeds/</loc>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/node2vec/</loc>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nadjet.github.io/blog/posts/</loc>
-    <lastmod>2020-03-19T15:56:33+01:00</lastmod>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nadjet.github.io/blog/tags/</loc>
+    <lastmod>2020-03-22T13:33:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/cypher/</loc>
     <lastmod>2020-03-19T15:56:33+01:00</lastmod>
   </url>
   

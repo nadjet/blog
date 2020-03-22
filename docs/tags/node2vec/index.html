@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Uploading pre-existing datasets in Neo4j: lessons learnt - Nadjet&#39;s NLP Stuff</title>
-  <meta name="description" content="Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &ldquo;toy&rdquo; dataset. Here is what I learnt from those exercises."><script type="application/ld+json">
+  <title>Overview of all pages with the tag #node2vec - Nadjet&#39;s NLP Stuff</title>
+  <meta name="description" content="Overview of all pages with the tag #node2vec, such as: Node similarity with graph embeddings using Node2Vec"><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -28,63 +28,13 @@
   
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "https:\/\/nadjet.github.io\/blog\/",
-          "name": "home"
-        }
-    },{
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "https:\/\/nadjet.github.io\/blog\/posts\/neo4j_olympic\/",
-          "name": "Uploading pre existing datasets in neo4j lessons learnt"
-        }
-    }]
-}
-</script><script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "author": {
-    "name" : ""
-  },
-  "headline": "Uploading pre-existing datasets in Neo4j: lessons learnt",
-  "description" : "Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing \x26ldquo;toy\x26rdquo; dataset. Here is what I learnt from those exercises.\n",
-  "inLanguage" : "en",
-  "wordCount":  284 ,
-  "datePublished" : "2020-03-19T15:56:33",
-  "dateModified" : "2020-03-19T15:56:33",
-  "image" : "https:\/\/nadjet.github.io\/blog\/",
-  "keywords" : [ "cypher, neo4j" ],
-  "mainEntityOfPage" : "https:\/\/nadjet.github.io\/blog\/posts\/neo4j_olympic\/",
-  "publisher" : {
-    "@type": "Organization",
-    "name" : "https:\/\/nadjet.github.io\/blog\/",
-    "logo" : {
-        "@type" : "ImageObject",
-        "url" : "https:\/\/nadjet.github.io\/blog\/",
-        "height" :  60 ,
-        "width" :  60
-    }
-  }
-}
-</script>
 
-<meta property="og:title" content="Uploading pre-existing datasets in Neo4j: lessons learnt" />
-<meta property="og:description" content="Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &ldquo;toy&rdquo; dataset. Here is what I learnt from those exercises.">
-<meta property="og:url" content="https://nadjet.github.io/blog/posts/neo4j_olympic/" />
+<meta property="og:title" content="node2vec" />
+<meta property="og:url" content="https://nadjet.github.io/blog/tags/node2vec/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Nadjet&#39;s NLP Stuff" />
 
-  <meta name="twitter:title" content="Uploading pre-existing datasets in Neo4j: lessons learnt" />
-  <meta name="twitter:description" content="Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database …">
+  <meta name="twitter:title" content="node2vec" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.62.2" />
   <link rel="alternate" href="https://nadjet.github.io/blog/index.xml" type="application/rss+xml" title="Nadjet&#39;s NLP Stuff"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -192,9 +142,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="posts-heading">
+            <div class="tags-heading">
               
-                <h1>Uploading pre-existing datasets in Neo4j: lessons learnt</h1>
+                <h1>node2vec</h1>
               
               
                 <hr class="small">
@@ -210,53 +160,62 @@
 
 
     
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-        <p>Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &ldquo;toy&rdquo; dataset. Here is what I learnt from those exercises.</p>
-<p>The POC did not have too much data (+100k concepts and +200k relations) but the modelling requirements were quite complex: duplicate nodes were allowed and so I could not rely on uniqueness constraints to constrain the data.  I ended up creating the graph with relatively complex queries and I wrote some code to sanity check the results, ensuring that the count of nodes and relations created was correct.</p>
-<p>After succeding in creating and validating the graph, I realized that I could have saved myself writing such complex queries if I had preprocessed the csv dataset to make it explicit what nodes and relations to create <strong>within</strong> the csv <strong>before</strong> loading the data.</p>
-<p>The toy dataset was about athletes participations to sports events at olympic games between 1896 and 2016. Its queries and dataset can be found in <a href="https://github.com/nadjet/neo4j_example">this</a> Github repository. The resulting graph was around 400k nodes and +1 million relations.</p>
-<p>The database modelled Athlete, Game, Event, Sport, Team, Medal and Participation as nodes. This latter, Participation, is what would be a foreign key table in a relational database, aka, a node to link an athlete's participation to an event on a team at a game with an optional medal. Each node corresponds to a row in the csv.</p>
-<p>Again, it was easier to add an id for the row in the csv since uniqueness constraint on multiple properties <a href="https://stackoverflow.com/questions/22498054/how-to-create-unique-constraint-involving-multiple-properties-in-neo4j">does not seem to be possible</a> in the Neo4j community edition.</p>
-
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
-          <div class="blog-tags">
-            
-              <a href="https://nadjet.github.io/blog//tags/cypher/">cypher</a>&nbsp;
-            
-              <a href="https://nadjet.github.io/blog//tags/neo4j/">neo4j</a>&nbsp;
-            
-          </div>
+        <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://nadjet.github.io/blog/posts/neo4j_gembeds/">
+        <h2 class="post-title">Node similarity with graph embeddings using Node2Vec</h2>
         
-
         
-
         
-      </article>
+    </a>
 
-      
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://nadjet.github.io/blog/posts/masters_topics/" data-toggle="tooltip" data-placement="top" title="My projects for Data Science Master Students">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://nadjet.github.io/blog/posts/neo4j_gembeds/" data-toggle="tooltip" data-placement="top" title="Node similarity with graph embeddings using Node2Vec">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
-      
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 22, 2020
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
+    
+  
+  
+</span>
 
 
-      
+    </p>
+    <div class="post-entry">
+        
+        <p>I computed graph embeddings on Athletes in a graph modelling <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results">Olympic Games</a> in <a href="https://neo4j.com/">Neo4j</a>. I was then able to compute the most similar Athletes to any given Athlete using <a href="https://github.com/VHRanger/nodevectors">Node2Vec</a>. I could then visually appreciate this similarity by looking at the corresponding subgraph subsuming the related nodes and their edges.</p>
+        <a href="https://nadjet.github.io/blog/posts/neo4j_gembeds/" class="post-read-more">[Read More]</a>
+        
+    </div>
 
+    
+    <div class="blog-tags">
+        
+        <a href="https://nadjet.github.io/blog//tags/neo4j/">neo4j</a>&nbsp;
+        
+        <a href="https://nadjet.github.io/blog//tags/node2vec/">node2vec</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+        </div>
+        
+      </div>
     </div>
   </div>
-</div>
 
       
 <footer>
