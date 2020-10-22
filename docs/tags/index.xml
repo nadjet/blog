@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 13:33:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 21:48:00 +0100</lastBuildDate>
     
 	<atom:link href="https://nadjet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bert</title>
+      <link>https://nadjet.github.io/blog/tags/bert/</link>
+      <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/bert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>similarity</title>
+      <link>https://nadjet.github.io/blog/tags/similarity/</link>
+      <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/similarity/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>neo4j</title>
