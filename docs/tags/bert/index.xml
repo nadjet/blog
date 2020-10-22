@@ -17,9 +17,7 @@
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
       <guid>https://nadjet.github.io/blog/posts/sentence_similarity/</guid>
-      <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings.&lt;/p&gt;
-&lt;p&gt;A popular approach is to perform the mean or max averaging of the sentence word embeddings.&lt;/p&gt;
-&lt;p&gt;Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
+      <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings. A popular approach is to perform the mean or max averaging of the sentence word embeddings. Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
     </item>
     
   </channel>

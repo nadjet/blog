@@ -17,9 +17,7 @@
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
       <guid>https://nadjet.github.io/blog/posts/sentence_similarity/</guid>
-      <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings.&lt;/p&gt;
-&lt;p&gt;A popular approach is to perform the mean or max averaging of the sentence word embeddings.&lt;/p&gt;
-&lt;p&gt;Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
+      <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings. A popular approach is to perform the mean or max averaging of the sentence word embeddings. Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,6 +36,16 @@
       
       <guid>https://nadjet.github.io/blog/posts/neo4j_olympic/</guid>
       <description>&lt;p&gt;Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &amp;ldquo;toy&amp;rdquo; dataset. Here is what I learnt from those exercises.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anonymization</title>
+      <link>https://nadjet.github.io/blog/posts/anonymization/</link>
+      <pubDate>Fri, 28 Feb 2020 12:15:07 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/anonymization/</guid>
+      <description>Anonymization What is anonymization? Anonymization means the processing of personal data in order to irreversibly prevent identification. If the personal information is recoverable, say because:
+ it is held in a separate resource, or the information hiding techniques employed make it recoverable, or the data still contains information that makes the person identifiable or partially identifiable, or the different bits of information can be cross-referenced within the dataset or across different datasets to infer the identity of the person.</description>
     </item>
     
     <item>

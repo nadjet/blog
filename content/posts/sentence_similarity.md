@@ -8,11 +8,7 @@ tags: ["bert", "similarity"]
 draft: false
 ---
 
-We can compute the similarity between two sentences by calculating the similarity between their embeddings. 
-
-A popular approach is to perform the mean or max averaging of the sentence word embeddings. 
-
-Another approach, which is faster and more performant, is to use SBert models. <!--more-->
+We can compute the similarity between two sentences by calculating the similarity between their embeddings. A popular approach is to perform the mean or max averaging of the sentence word embeddings. Another approach, which is faster and more performant, is to use SBert models. <!--more-->
 
 In this [repository](https://github.com/nadjet/sentence_similarity), I present some code I wrote to compute sentence similarity using both approaches, for comparison.
 
