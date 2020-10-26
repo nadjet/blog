@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>neo4j on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/blog/tags/neo4j/</link>
+    <link>https://nadjet.github.io/tags/neo4j/</link>
     <description>Recent content in neo4j on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Mar 2020 13:33:00 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/blog/tags/neo4j/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/tags/neo4j/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node similarity with graph embeddings using Node2Vec</title>
-      <link>https://nadjet.github.io/blog/posts/neo4j_gembeds/</link>
+      <link>https://nadjet.github.io/posts/neo4j_gembeds/</link>
       <pubDate>Sun, 22 Mar 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/neo4j_gembeds/</guid>
+      <guid>https://nadjet.github.io/posts/neo4j_gembeds/</guid>
       <description>&lt;p&gt;I computed graph embeddings on Athletes in a graph modelling &lt;a href=&#34;https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results&#34;&gt;Olympic Games&lt;/a&gt; in &lt;a href=&#34;https://neo4j.com/&#34;&gt;Neo4j&lt;/a&gt;. I was then able to compute the most similar Athletes to any given Athlete using &lt;a href=&#34;https://github.com/VHRanger/nodevectors&#34;&gt;Node2Vec&lt;/a&gt;. I could then visually appreciate this similarity by looking at the corresponding subgraph subsuming the related nodes and their edges.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Uploading pre-existing datasets in Neo4j: lessons learnt</title>
-      <link>https://nadjet.github.io/blog/posts/neo4j_olympic/</link>
+      <link>https://nadjet.github.io/posts/neo4j_olympic/</link>
       <pubDate>Thu, 19 Mar 2020 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/neo4j_olympic/</guid>
+      <guid>https://nadjet.github.io/posts/neo4j_olympic/</guid>
       <description>&lt;p&gt;Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &amp;ldquo;toy&amp;rdquo; dataset. Here is what I learnt from those exercises.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to bulk upload data into Neo4j Community Edition</title>
-      <link>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</link>
+      <link>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</link>
       <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</guid>
+      <guid>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</guid>
       <description>&lt;p&gt;In this post, I explain how to upload concepts and relations into Neo4J Community Edition.&lt;/p&gt;</description>
     </item>
     

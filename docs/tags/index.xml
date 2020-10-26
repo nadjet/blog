@@ -2,183 +2,183 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/blog/tags/</link>
+    <link>https://nadjet.github.io/tags/</link>
     <description>Recent content in Tags on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Oct 2020 21:48:00 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bert</title>
-      <link>https://nadjet.github.io/blog/tags/bert/</link>
+      <link>https://nadjet.github.io/tags/bert/</link>
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/bert/</guid>
+      <guid>https://nadjet.github.io/tags/bert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>similarity</title>
-      <link>https://nadjet.github.io/blog/tags/similarity/</link>
+      <link>https://nadjet.github.io/tags/similarity/</link>
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/similarity/</guid>
+      <guid>https://nadjet.github.io/tags/similarity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dbpedia</title>
-      <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
+      <link>https://nadjet.github.io/tags/dbpedia/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/dbpedia/</guid>
+      <guid>https://nadjet.github.io/tags/dbpedia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Knowledge graphs</title>
-      <link>https://nadjet.github.io/blog/tags/knowledge-graphs/</link>
+      <link>https://nadjet.github.io/tags/knowledge-graphs/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/knowledge-graphs/</guid>
+      <guid>https://nadjet.github.io/tags/knowledge-graphs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>master</title>
-      <link>https://nadjet.github.io/blog/tags/master/</link>
+      <link>https://nadjet.github.io/tags/master/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/master/</guid>
+      <guid>https://nadjet.github.io/tags/master/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NLG</title>
-      <link>https://nadjet.github.io/blog/tags/nlg/</link>
+      <link>https://nadjet.github.io/tags/nlg/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/nlg/</guid>
+      <guid>https://nadjet.github.io/tags/nlg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Q/A</title>
-      <link>https://nadjet.github.io/blog/tags/q/a/</link>
+      <link>https://nadjet.github.io/tags/q/a/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/q/a/</guid>
+      <guid>https://nadjet.github.io/tags/q/a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>neo4j</title>
-      <link>https://nadjet.github.io/blog/tags/neo4j/</link>
+      <link>https://nadjet.github.io/tags/neo4j/</link>
       <pubDate>Sun, 22 Mar 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/neo4j/</guid>
+      <guid>https://nadjet.github.io/tags/neo4j/</guid>
       <description></description>
     </item>
     
     <item>
       <title>node2vec</title>
-      <link>https://nadjet.github.io/blog/tags/node2vec/</link>
+      <link>https://nadjet.github.io/tags/node2vec/</link>
       <pubDate>Sun, 22 Mar 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/node2vec/</guid>
+      <guid>https://nadjet.github.io/tags/node2vec/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cypher</title>
-      <link>https://nadjet.github.io/blog/tags/cypher/</link>
+      <link>https://nadjet.github.io/tags/cypher/</link>
       <pubDate>Thu, 19 Mar 2020 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/cypher/</guid>
+      <guid>https://nadjet.github.io/tags/cypher/</guid>
       <description></description>
     </item>
     
     <item>
       <title>anonymization</title>
-      <link>https://nadjet.github.io/blog/tags/anonymization/</link>
+      <link>https://nadjet.github.io/tags/anonymization/</link>
       <pubDate>Fri, 28 Feb 2020 12:15:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/anonymization/</guid>
+      <guid>https://nadjet.github.io/tags/anonymization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deep_learning</title>
-      <link>https://nadjet.github.io/blog/tags/deep_learning/</link>
+      <link>https://nadjet.github.io/tags/deep_learning/</link>
       <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/deep_learning/</guid>
+      <guid>https://nadjet.github.io/tags/deep_learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fastai</title>
-      <link>https://nadjet.github.io/blog/tags/fastai/</link>
+      <link>https://nadjet.github.io/tags/fastai/</link>
       <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/fastai/</guid>
+      <guid>https://nadjet.github.io/tags/fastai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>knowledge_graphs</title>
-      <link>https://nadjet.github.io/blog/tags/knowledge_graphs/</link>
+      <link>https://nadjet.github.io/tags/knowledge_graphs/</link>
       <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/knowledge_graphs/</guid>
+      <guid>https://nadjet.github.io/tags/knowledge_graphs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text_mining</title>
-      <link>https://nadjet.github.io/blog/tags/text_mining/</link>
+      <link>https://nadjet.github.io/tags/text_mining/</link>
       <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/text_mining/</guid>
+      <guid>https://nadjet.github.io/tags/text_mining/</guid>
       <description></description>
     </item>
     
     <item>
       <title>visualization</title>
-      <link>https://nadjet.github.io/blog/tags/visualization/</link>
+      <link>https://nadjet.github.io/tags/visualization/</link>
       <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/visualization/</guid>
+      <guid>https://nadjet.github.io/tags/visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>geonames</title>
-      <link>https://nadjet.github.io/blog/tags/geonames/</link>
+      <link>https://nadjet.github.io/tags/geonames/</link>
       <pubDate>Thu, 07 Nov 2019 20:21:58 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/geonames/</guid>
+      <guid>https://nadjet.github.io/tags/geonames/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtuoso</title>
-      <link>https://nadjet.github.io/blog/tags/virtuoso/</link>
+      <link>https://nadjet.github.io/tags/virtuoso/</link>
       <pubDate>Thu, 07 Nov 2019 20:21:58 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/virtuoso/</guid>
+      <guid>https://nadjet.github.io/tags/virtuoso/</guid>
       <description></description>
     </item>
     
     <item>
       <title>how_to</title>
-      <link>https://nadjet.github.io/blog/tags/how_to/</link>
+      <link>https://nadjet.github.io/tags/how_to/</link>
       <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/how_to/</guid>
+      <guid>https://nadjet.github.io/tags/how_to/</guid>
       <description></description>
     </item>
     

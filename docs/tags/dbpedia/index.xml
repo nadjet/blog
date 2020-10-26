@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dbpedia on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
+    <link>https://nadjet.github.io/tags/dbpedia/</link>
     <description>Recent content in dbpedia on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Oct 2020 12:11:38 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/blog/tags/dbpedia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/tags/dbpedia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science Projects (Q1-2021)</title>
-      <link>https://nadjet.github.io/blog/posts/masters_topics_q1_2021/</link>
+      <link>https://nadjet.github.io/posts/masters_topics_q1_2021/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/masters_topics_q1_2021/</guid>
+      <guid>https://nadjet.github.io/posts/masters_topics_q1_2021/</guid>
       <description>&lt;p&gt;This first quarter of the 2020-2021 academic year, I supervise 6 final year projects in the &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; of the UOC University, ranging from the development of a COVID-19 FAQ-based Q-A system to building knowledge graphs and performing end-to-end Natural Language Generation. Below is a list of resources and references I offer to get the students started organized in relevant topics.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My projects for Data Science Master Students</title>
-      <link>https://nadjet.github.io/blog/posts/masters_topics/</link>
+      <link>https://nadjet.github.io/posts/masters_topics/</link>
       <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/masters_topics/</guid>
+      <guid>https://nadjet.github.io/posts/masters_topics/</guid>
       <description>&lt;p&gt;Here are the projects I propose to &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; students for their final project this semester. They range from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mining and Geovisualization of Domain Specific DBPedia Concepts</title>
-      <link>https://nadjet.github.io/blog/posts/concept_mining_environment/</link>
+      <link>https://nadjet.github.io/posts/concept_mining_environment/</link>
       <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/concept_mining_environment/</guid>
+      <guid>https://nadjet.github.io/posts/concept_mining_environment/</guid>
       <description>&lt;p&gt;I extracted domain specific concepts from DBPedia and showed them on an interactive map of the world. The geolocalization was done using Geonames. This was a fun project to do.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Setting up DBPedia/Geonames on OpenLink Virtuoso</title>
-      <link>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</link>
+      <link>https://nadjet.github.io/posts/bulk_upload_virtuoso/</link>
       <pubDate>Thu, 07 Nov 2019 20:21:58 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</guid>
+      <guid>https://nadjet.github.io/posts/bulk_upload_virtuoso/</guid>
       <description>&lt;p&gt;In this post, I explain how to setup DBPedia and Geonames locally on Virtuoso Triplestore.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install DBPedia Spotlight Locally</title>
-      <link>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</link>
+      <link>https://nadjet.github.io/posts/install_dbpedia_spotlight/</link>
       <pubDate>Sat, 21 Sep 2019 06:24:17 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</guid>
+      <guid>https://nadjet.github.io/posts/install_dbpedia_spotlight/</guid>
       <description>&lt;p&gt;In this post I explain how to install on &lt;a href=&#34;https://www.dbpedia-spotlight.org/&#34;&gt;DBPedia Spotlight&lt;/a&gt; on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators.&lt;/p&gt;</description>
     </item>
     
