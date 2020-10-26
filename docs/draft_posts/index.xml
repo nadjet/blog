@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Draft_posts on Nadjet&#39;s NLP Stuff</title>
+    <link>https://nadjet.github.io/blog/draft_posts/</link>
+    <description>Recent content in Draft_posts on Nadjet&#39;s NLP Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2020 12:15:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://nadjet.github.io/blog/draft_posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anonymization</title>
+      <link>https://nadjet.github.io/blog/draft_posts/anonymization/</link>
+      <pubDate>Fri, 28 Feb 2020 12:15:07 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/draft_posts/anonymization/</guid>
+      <description>Anonymization What is anonymization? Anonymization means the processing of personal data in order to irreversibly prevent identification. If the personal information is recoverable, say because:
+ it is held in a separate resource, or the information hiding techniques employed make it recoverable, or the data still contains information that makes the person identifiable or partially identifiable, or the different bits of information can be cross-referenced within the dataset or across different datasets to infer the identity of the person.</description>
+    </item>
+    
+  </channel>
+</rss>
