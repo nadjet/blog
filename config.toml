@@ -1,4 +1,4 @@
-baseURL = "https://nadjet.github.io/blog/"
+baseURL = "https://nadjet.github.io/blog"
 publishDir = "docs"
 languageCode = "en-us"
 title = "Nadjet's NLP Stuff"
@@ -15,6 +15,6 @@ theme = "beautifulhugo"
   [[menu.main]]
     identifier = "about me"
     name = "about me"
-    url = "about/"
+    url = "/about/"
     weight = 40
 
