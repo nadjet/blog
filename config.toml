@@ -9,7 +9,7 @@ theme = "beautifulhugo"
   [[menu.main]]
     identifier = "home"
     name = "home"
-    url = "https://nadjet.github.io/blog"
+    url = "/"
     weight = 10
 
   [[menu.main]]
