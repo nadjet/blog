@@ -5,7 +5,7 @@ tags: ["dbpedia","master"]
 draft: false
 ---
 
-Here are the projects I propose to [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) students for their final project this semester. They ranges from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.
+Here are the projects I propose to [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) students for their final project this semester. They range from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.
 
 <!--more-->
 
