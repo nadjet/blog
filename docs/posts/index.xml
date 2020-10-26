@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/posts/</link>
+    <link>https://nadjet.github.io/blog/posts/</link>
     <description>Recent content in Posts on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Oct 2020 21:48:00 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sentence similarity with Bert vs SBert</title>
-      <link>https://nadjet.github.io/posts/sentence_similarity/</link>
+      <link>https://nadjet.github.io/blog/posts/sentence_similarity/</link>
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/sentence_similarity/</guid>
+      <guid>https://nadjet.github.io/blog/posts/sentence_similarity/</guid>
       <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings. A popular approach is to perform the mean or max averaging of the sentence word embeddings. Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Data Science Projects (Q1-2021)</title>
-      <link>https://nadjet.github.io/posts/masters_topics_q1_2021/</link>
+      <link>https://nadjet.github.io/blog/posts/masters_topics_q1_2021/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/masters_topics_q1_2021/</guid>
+      <guid>https://nadjet.github.io/blog/posts/masters_topics_q1_2021/</guid>
       <description>&lt;p&gt;This first quarter of the 2020-2021 academic year, I supervise 6 final year projects in the &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; of the UOC University, ranging from the development of a COVID-19 FAQ-based Q-A system to building knowledge graphs and performing end-to-end Natural Language Generation. Below is a list of resources and references I offer to get the students started organized in relevant topics.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Node similarity with graph embeddings using Node2Vec</title>
-      <link>https://nadjet.github.io/posts/neo4j_gembeds/</link>
+      <link>https://nadjet.github.io/blog/posts/neo4j_gembeds/</link>
       <pubDate>Sun, 22 Mar 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/neo4j_gembeds/</guid>
+      <guid>https://nadjet.github.io/blog/posts/neo4j_gembeds/</guid>
       <description>&lt;p&gt;I computed graph embeddings on Athletes in a graph modelling &lt;a href=&#34;https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results&#34;&gt;Olympic Games&lt;/a&gt; in &lt;a href=&#34;https://neo4j.com/&#34;&gt;Neo4j&lt;/a&gt;. I was then able to compute the most similar Athletes to any given Athlete using &lt;a href=&#34;https://github.com/VHRanger/nodevectors&#34;&gt;Node2Vec&lt;/a&gt;. I could then visually appreciate this similarity by looking at the corresponding subgraph subsuming the related nodes and their edges.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Uploading pre-existing datasets in Neo4j: lessons learnt</title>
-      <link>https://nadjet.github.io/posts/neo4j_olympic/</link>
+      <link>https://nadjet.github.io/blog/posts/neo4j_olympic/</link>
       <pubDate>Thu, 19 Mar 2020 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/neo4j_olympic/</guid>
+      <guid>https://nadjet.github.io/blog/posts/neo4j_olympic/</guid>
       <description>&lt;p&gt;Recently I developed a proof-of-concept to model and query data with Neo4J starting from a pre-existing dataset. I also performed a training session for loading and querying a Neo4j graph database from a pre-existing &amp;ldquo;toy&amp;rdquo; dataset. Here is what I learnt from those exercises.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My projects for Data Science Master Students</title>
-      <link>https://nadjet.github.io/posts/masters_topics/</link>
+      <link>https://nadjet.github.io/blog/posts/masters_topics/</link>
       <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/masters_topics/</guid>
+      <guid>https://nadjet.github.io/blog/posts/masters_topics/</guid>
       <description>&lt;p&gt;Here are the projects I propose to &lt;a href=&#34;https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion&#34;&gt;Data Science Master&lt;/a&gt; students for their final project this semester. They range from text mining, concept mining, question answering to natural language generation. Most of them will be based on DBPedia/Wikipedia datasets.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Seq2seq Natural Language Generation</title>
-      <link>https://nadjet.github.io/posts/seq2seq_nlg/</link>
+      <link>https://nadjet.github.io/blog/posts/seq2seq_nlg/</link>
       <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/seq2seq_nlg/</guid>
+      <guid>https://nadjet.github.io/blog/posts/seq2seq_nlg/</guid>
       <description>&lt;p&gt;I implemented a seq2seq Natural Language Generator using the &lt;a href=&#34;https://www.fast.ai/&#34;&gt;fastai&lt;/a&gt; library and the &lt;a href=&#34;http://www.macs.hw.ac.uk/InteractionLab/E2E/&#34;&gt;2017 e2e NLG challenge&lt;/a&gt; &lt;a href=&#34;https://github.com/tuetschek/e2e-dataset&#34;&gt;dataset&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mining and Geovisualization of Domain Specific DBPedia Concepts</title>
-      <link>https://nadjet.github.io/posts/concept_mining_environment/</link>
+      <link>https://nadjet.github.io/blog/posts/concept_mining_environment/</link>
       <pubDate>Thu, 07 Nov 2019 22:32:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/concept_mining_environment/</guid>
+      <guid>https://nadjet.github.io/blog/posts/concept_mining_environment/</guid>
       <description>&lt;p&gt;I extracted domain specific concepts from DBPedia and showed them on an interactive map of the world. The geolocalization was done using Geonames. This was a fun project to do.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Setting up DBPedia/Geonames on OpenLink Virtuoso</title>
-      <link>https://nadjet.github.io/posts/bulk_upload_virtuoso/</link>
+      <link>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</link>
       <pubDate>Thu, 07 Nov 2019 20:21:58 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/bulk_upload_virtuoso/</guid>
+      <guid>https://nadjet.github.io/blog/posts/bulk_upload_virtuoso/</guid>
       <description>&lt;p&gt;In this post, I explain how to setup DBPedia and Geonames locally on Virtuoso Triplestore.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to bulk upload data into Neo4j Community Edition</title>
-      <link>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</link>
+      <link>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</link>
       <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</guid>
+      <guid>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</guid>
       <description>&lt;p&gt;In this post, I explain how to upload concepts and relations into Neo4J Community Edition.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install DBPedia Spotlight Locally</title>
-      <link>https://nadjet.github.io/posts/install_dbpedia_spotlight/</link>
+      <link>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</link>
       <pubDate>Sat, 21 Sep 2019 06:24:17 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/install_dbpedia_spotlight/</guid>
+      <guid>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</guid>
       <description>&lt;p&gt;In this post I explain how to install on &lt;a href=&#34;https://www.dbpedia-spotlight.org/&#34;&gt;DBPedia Spotlight&lt;/a&gt; on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Multi-label classification</title>
-      <link>https://nadjet.github.io/posts/multi_label_classification/</link>
+      <link>https://nadjet.github.io/blog/posts/multi_label_classification/</link>
       <pubDate>Fri, 05 Apr 2019 18:07:41 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/multi_label_classification/</guid>
+      <guid>https://nadjet.github.io/blog/posts/multi_label_classification/</guid>
       <description>&lt;p&gt;I have trained a classifier with fine tuned embedding language model that assigns content labels to basic restaurant descriptions using the &lt;a href=&#34;https://www.fast.ai/&#34;&gt;fastai&lt;/a&gt; library.&lt;/p&gt;</description>
     </item>
     

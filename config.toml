@@ -1,4 +1,4 @@
-baseURL = "https://nadjet.github.io/"
+baseURL = "https://nadjet.github.io/blog"
 publishDir = "docs"
 languageCode = "en-us"
 title = "Nadjet's NLP Stuff"
