@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>how_to on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/tags/how_to/</link>
+    <link>https://nadjet.github.io/blog/tags/how_to/</link>
     <description>Recent content in how_to on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Sep 2019 15:56:33 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/tags/how_to/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/blog/tags/how_to/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to bulk upload data into Neo4j Community Edition</title>
-      <link>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</link>
+      <link>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</link>
       <pubDate>Sat, 28 Sep 2019 15:56:33 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/bulk_upload_neo4j_community/</guid>
+      <guid>https://nadjet.github.io/blog/posts/bulk_upload_neo4j_community/</guid>
       <description>&lt;p&gt;In this post, I explain how to upload concepts and relations into Neo4J Community Edition.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to install DBPedia Spotlight Locally</title>
-      <link>https://nadjet.github.io/posts/install_dbpedia_spotlight/</link>
+      <link>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</link>
       <pubDate>Sat, 21 Sep 2019 06:24:17 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/posts/install_dbpedia_spotlight/</guid>
+      <guid>https://nadjet.github.io/blog/posts/install_dbpedia_spotlight/</guid>
       <description>&lt;p&gt;In this post I explain how to install on &lt;a href=&#34;https://www.dbpedia-spotlight.org/&#34;&gt;DBPedia Spotlight&lt;/a&gt; on your local computer. DBPedia Spotlight is a tool that annotates mentions of DBPedia concepts in text. It is not in active development but can still be useful for Proof-of-Concept Demonstrators.&lt;/p&gt;</description>
     </item>
     
