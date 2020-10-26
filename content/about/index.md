@@ -3,7 +3,7 @@ title: "About myself"
 draft: true
 ---
 
-My name is Nadjet Bouayad-Agha. I am a specialist in Natural Language Processing. I am particularly interested in [Natural Language Generation](https://nadjet.github.io/blog/posts/seq2seq_nlg/) (NLG) and [Knowledge Engineering](http://localhost:1313/posts/concept_mining_environment/). 
+My name is Nadjet Bouayad-Agha. I am a specialist in Natural Language Processing. I am particularly interested in [Natural Language Generation](https://nadjet.github.io/blog/posts/seq2seq_nlg/) (NLG) and [Knowledge Engineering](http://nadjet.github.io/blog/posts/concept_mining_environment/). 
 
 I like solving real-world problems in a variety of domains using abundant data, open-source resources and cutting edge [Deep Learning and NLP techniques](https://nadjet.github.io/blog/posts/sentence_similarity/). 
 
