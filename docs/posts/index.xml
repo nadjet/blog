@@ -39,16 +39,6 @@
     </item>
     
     <item>
-      <title>Anonymization</title>
-      <link>https://nadjet.github.io/blog/posts/anonymization/</link>
-      <pubDate>Fri, 28 Feb 2020 12:15:07 +0100</pubDate>
-      
-      <guid>https://nadjet.github.io/blog/posts/anonymization/</guid>
-      <description>Anonymization What is anonymization? Anonymization means the processing of personal data in order to irreversibly prevent identification. If the personal information is recoverable, say because:
- it is held in a separate resource, or the information hiding techniques employed make it recoverable, or the data still contains information that makes the person identifiable or partially identifiable, or the different bits of information can be cross-referenced within the dataset or across different datasets to infer the identity of the person.</description>
-    </item>
-    
-    <item>
       <title>My projects for Data Science Master Students</title>
       <link>https://nadjet.github.io/blog/posts/masters_topics/</link>
       <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
