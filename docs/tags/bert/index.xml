@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bert on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/blog/tags/bert/</link>
+    <link>https://nadjet.github.io/tags/bert/</link>
     <description>Recent content in bert on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Oct 2020 21:48:00 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/blog/tags/bert/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/tags/bert/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sentence similarity with Bert vs SBert</title>
-      <link>https://nadjet.github.io/blog/posts/sentence_similarity/</link>
+      <link>https://nadjet.github.io/posts/sentence_similarity/</link>
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/sentence_similarity/</guid>
+      <guid>https://nadjet.github.io/posts/sentence_similarity/</guid>
       <description>&lt;p&gt;We can compute the similarity between two sentences by calculating the similarity between their embeddings. A popular approach is to perform the mean or max averaging of the sentence word embeddings. Another approach, which is faster and more performant, is to use SBert models.&lt;/p&gt;</description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>deep_learning on Nadjet&#39;s NLP Stuff</title>
-    <link>https://nadjet.github.io/blog/tags/deep_learning/</link>
+    <link>https://nadjet.github.io/tags/deep_learning/</link>
     <description>Recent content in deep_learning on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Dec 2019 14:33:22 +0100</lastBuildDate>
     
-	<atom:link href="https://nadjet.github.io/blog/tags/deep_learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nadjet.github.io/tags/deep_learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Seq2seq Natural Language Generation</title>
-      <link>https://nadjet.github.io/blog/posts/seq2seq_nlg/</link>
+      <link>https://nadjet.github.io/posts/seq2seq_nlg/</link>
       <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/seq2seq_nlg/</guid>
+      <guid>https://nadjet.github.io/posts/seq2seq_nlg/</guid>
       <description>&lt;p&gt;I implemented a seq2seq Natural Language Generator using the &lt;a href=&#34;https://www.fast.ai/&#34;&gt;fastai&lt;/a&gt; library and the &lt;a href=&#34;http://www.macs.hw.ac.uk/InteractionLab/E2E/&#34;&gt;2017 e2e NLG challenge&lt;/a&gt; &lt;a href=&#34;https://github.com/tuetschek/e2e-dataset&#34;&gt;dataset&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Multi-label classification</title>
-      <link>https://nadjet.github.io/blog/posts/multi_label_classification/</link>
+      <link>https://nadjet.github.io/posts/multi_label_classification/</link>
       <pubDate>Fri, 05 Apr 2019 18:07:41 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/posts/multi_label_classification/</guid>
+      <guid>https://nadjet.github.io/posts/multi_label_classification/</guid>
       <description>&lt;p&gt;I have trained a classifier with fine tuned embedding language model that assigns content labels to basic restaurant descriptions using the &lt;a href=&#34;https://www.fast.ai/&#34;&gt;fastai&lt;/a&gt; library.&lt;/p&gt;</description>
     </item>
     
