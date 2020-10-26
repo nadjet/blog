@@ -1,5 +1,5 @@
 ---
-title: "Projects for Data Science Master (Q1-2021)"
+title: "Data Science Projects (Q1-2021)"
 date: 2020-10-10T12:11:38+01:00
 draft: false
 tags: ["master","Q/A","Knowledge graphs","DBPedia","NLG"]
