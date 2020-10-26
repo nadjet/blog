@@ -30,6 +30,51 @@
     </item>
     
     <item>
+      <title>dbpedia</title>
+      <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
+      <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/dbpedia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Knowledge graphs</title>
+      <link>https://nadjet.github.io/blog/tags/knowledge-graphs/</link>
+      <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/knowledge-graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>master</title>
+      <link>https://nadjet.github.io/blog/tags/master/</link>
+      <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/master/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLG</title>
+      <link>https://nadjet.github.io/blog/tags/nlg/</link>
+      <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/nlg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Q/A</title>
+      <link>https://nadjet.github.io/blog/tags/q/a/</link>
+      <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/q/a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>neo4j</title>
       <link>https://nadjet.github.io/blog/tags/neo4j/</link>
       <pubDate>Sun, 22 Mar 2020 13:33:00 +0100</pubDate>
@@ -57,20 +102,11 @@
     </item>
     
     <item>
-      <title>dbpedia</title>
-      <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
-      <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
+      <title>anonymization</title>
+      <link>https://nadjet.github.io/blog/tags/anonymization/</link>
+      <pubDate>Fri, 28 Feb 2020 12:15:07 +0100</pubDate>
       
-      <guid>https://nadjet.github.io/blog/tags/dbpedia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>master</title>
-      <link>https://nadjet.github.io/blog/tags/master/</link>
-      <pubDate>Fri, 10 Jan 2020 11:24:13 +0100</pubDate>
-      
-      <guid>https://nadjet.github.io/blog/tags/master/</guid>
+      <guid>https://nadjet.github.io/blog/tags/anonymization/</guid>
       <description></description>
     </item>
     
@@ -89,15 +125,6 @@
       <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
       
       <guid>https://nadjet.github.io/blog/tags/fastai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLG</title>
-      <link>https://nadjet.github.io/blog/tags/nlg/</link>
-      <pubDate>Tue, 31 Dec 2019 14:33:22 +0100</pubDate>
-      
-      <guid>https://nadjet.github.io/blog/tags/nlg/</guid>
       <description></description>
     </item>
     

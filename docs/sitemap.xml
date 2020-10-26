@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nadjet.github.io/blog/tags/bert/</loc>
-    <lastmod>2020-10-22T21:48:00+01:00</lastmod>
+    <loc>https://nadjet.github.io/blog/page/about/</loc>
+    <lastmod>2020-10-26T15:24:30+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nadjet.github.io/blog/</loc>
+    <lastmod>2020-10-26T15:24:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/page/</loc>
+    <lastmod>2020-10-26T15:24:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/bert/</loc>
     <lastmod>2020-10-22T21:48:00+01:00</lastmod>
   </url>
   
@@ -30,6 +40,36 @@
   <url>
     <loc>https://nadjet.github.io/blog/tags/</loc>
     <lastmod>2020-10-22T21:48:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/dbpedia/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/knowledge-graphs/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/master/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/nlg/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/posts/masters_topics_q1_2021/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/tags/q/a/</loc>
+    <lastmod>2020-10-10T12:11:38+01:00</lastmod>
   </url>
   
   <url>
@@ -58,13 +98,18 @@
   </url>
   
   <url>
-    <loc>https://nadjet.github.io/blog/tags/dbpedia/</loc>
-    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+    <loc>https://nadjet.github.io/blog/draft_posts/anonymization/</loc>
+    <lastmod>2020-02-28T12:15:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nadjet.github.io/blog/tags/master/</loc>
-    <lastmod>2020-01-10T11:24:13+01:00</lastmod>
+    <loc>https://nadjet.github.io/blog/tags/anonymization/</loc>
+    <lastmod>2020-02-28T12:15:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nadjet.github.io/blog/draft_posts/</loc>
+    <lastmod>2020-02-28T12:15:07+01:00</lastmod>
   </url>
   
   <url>
@@ -79,11 +124,6 @@
   
   <url>
     <loc>https://nadjet.github.io/blog/tags/fastai/</loc>
-    <lastmod>2019-12-31T14:33:22+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nadjet.github.io/blog/tags/nlg/</loc>
     <lastmod>2019-12-31T14:33:22+01:00</lastmod>
   </url>
   
