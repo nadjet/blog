@@ -9,12 +9,12 @@ theme = "beautifulhugo"
   [[menu.main]]
     identifier = "home"
     name = "home"
-    url = "/"
+    url = ""
     weight = 10
 
   [[menu.main]]
     identifier = "about me"
     name = "about me"
-    url = "/about/"
+    url = "about/"
     weight = 40
 
