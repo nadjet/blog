@@ -47,8 +47,9 @@ This first quarter of the 2020-2021 academic year, I supervise 6 final year proj
 # Language Models and Bert
 
 - Sentence similarity (including question similarity) with [Bert as a service](https://github.com/hanxiao/bert-as-service)
-Jay Alammar’s Blog, [A visual guide to using Bert for the first time]http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/(). Check out his other visual blog posts: word embeddings, seq2seq, etc.
 - [SBert](https://github.com/UKPLab/sentence-transformers), aka Sentence embeddings.
+- [Sentence similarity using SBert vs Bert](https://nadjet.github.io/blog/posts/sentence_similarity/).
+- Jay Alammar’s Blog, [A visual guide to using Bert for the first time](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/). Check out his other visual blog posts: word embeddings, seq2seq, etc.
  
  
 # Catalan Language Processing
