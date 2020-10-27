@@ -50,6 +50,8 @@ This first quarter of the 2020-2021 academic year, I supervise 6 final year proj
 - [SBert](https://github.com/UKPLab/sentence-transformers), aka Sentence embeddings.
 - [Sentence similarity using SBert vs Bert](https://nadjet.github.io/blog/posts/sentence_similarity/).
 - Jay Alammar’s Blog, [A visual guide to using Bert for the first time](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/). Check out his other visual blog posts: word embeddings, seq2seq, etc.
+- [BERT Word Embeddings Tutorial](https://mccormickml.com/2019/05/14/BERT-word-embeddings-tutorial/), Chris McCormick, 2019.
+- [BERT fine-tuning tutorial with Pytorch](https://mccormickml.com/2019/07/22/BERT-fine-tuning/), Chris McCormick, 2020.
  
  
 # Catalan Language Processing
