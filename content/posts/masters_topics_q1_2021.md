@@ -2,7 +2,7 @@
 title: "Data Science Projects (Q1-2021)"
 date: 2020-10-10T12:11:38+01:00
 draft: false
-tags: ["master","Q/A","Knowledge graphs","DBPedia","NLG"]
+tags: ["master","Q/A","Knowledge graphs","DBPedia","NLG","Bert"]
 ---
 
 This first quarter of the 2020-2021 academic year, I supervise 6 final year projects in the [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) of the UOC University, ranging from the development of a COVID-19 FAQ-based Q-A system to building knowledge graphs and performing end-to-end Natural Language Generation. Below is a list of resources and references I offer to get the students started organized in relevant topics. 
