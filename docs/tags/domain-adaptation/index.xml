@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>domain adaptation on Nadjet&#39;s NLP Stuff</title>
+    <link>https://nadjet.github.io/blog/tags/domain-adaptation/</link>
+    <description>Recent content in domain adaptation on Nadjet&#39;s NLP Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2020 14:34:18 +0100</lastBuildDate>
+    
+	<atom:link href="https://nadjet.github.io/blog/tags/domain-adaptation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aspect Based Sentiment Analysis</title>
+      <link>https://nadjet.github.io/blog/posts/absa/</link>
+      <pubDate>Thu, 30 Apr 2020 14:34:18 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/absa/</guid>
+      <description>Aspect Based Sentiment Analysis Here I report on approaches to ABSA as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my implementation of both BERT-SPC and BERT-ADA.
+What is ABSA? Example: “The dessert in this restaurant is good but the service is poor”.
+In this review sentence, sentiments (i.e., polarity) are expressed towards different “aspects” of the domain, namely “food” with a positive polarity, and “service” with a negative polarity.</description>
+    </item>
+    
+  </channel>
+</rss>
