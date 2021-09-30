@@ -1,13 +1,16 @@
 ---
+
 title: "Data Science Projects (Q1-2022)"
 date: 2021-07-29T14:18:55+01:00
 draft: false
 tags: ["master","argument mining","text mining", "wikipedia", "anonymization", "aircraft maintenance","telemedecine"]
+
 ---
 
-This first quarter of the 2021-2022 academic year, I supervise 5 final year projects in the [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) of the UOC University, three of which in "general" domains which are 1) [argument mining](#1-argument-mining), 2) [mining of encyclopedic knowledge from wikipedia](#2-wikipedia), 3) [text anonymization](#3-anonym), and two of which in applied domains that are 4) use of [NLP in an online medical consultation application](#4-medical), and 5) [detection of recurrent defects in aircraft safety reports](#5-defects). Below is a selection of the resources and references I give to the students ti get them started (sorry, the bibliographical citations are a bit sloppy).
+This first quarter of the 2021-2022 academic year, I supervise 5 final year projects in the [Data Science Master](https://estudios.uoc.edu/es/masters-universitarios/data-science/presentacion) of the UOC University, three of which in "general" domains which are 1) [argument mining](#1-argument-mining), 2) [mining of encyclopedic knowledge from wikipedia](#2-wikipedia), 3) [text anonymization](#3-anonym), and two of which in applied domains that are 4) use of [NLP in an online medical consultation application](#4-medical), and 5) [detection of recurrent defects in aircraft safety reports](#5-defects). Below is a selection of the resources and references I give to the students to get them started (sorry, the bibliographical citations are a bit sloppy).
 
 <!--more--> 
+
 
 
 # 1. <a name="1-argument-mining"></a>Argument Mining

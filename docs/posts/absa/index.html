@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Aspect Based Sentiment Analysis - Nadjet&#39;s NLP Stuff</title>
+  <meta name="description" content="In this post I report on approaches to ABSA as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my implementation of both BERT-SPC and BERT-ADA."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Nadjet\x27s NLP Stuff",
+    
+    "url": "https:\/\/nadjet.github.io\/blog\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/nadjet.github.io\/blog\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/nadjet.github.io\/blog\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/nadjet.github.io\/blog\/posts\/absa\/",
+          "name": "Aspect based sentiment analysis"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "Aspect Based Sentiment Analysis",
+  "description" : "In this post I report on approaches to ABSA as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my implementation of both BERT-SPC and BERT-ADA.\n",
+  "inLanguage" : "en",
+  "wordCount":  1245 ,
+  "datePublished" : "2020-04-30T14:34:18",
+  "dateModified" : "2020-04-30T14:34:18",
+  "image" : "https:\/\/nadjet.github.io\/blog\/",
+  "keywords" : [ "bert, ABSA, domain adaptation" ],
+  "mainEntityOfPage" : "https:\/\/nadjet.github.io\/blog\/posts\/absa\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/nadjet.github.io\/blog\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/nadjet.github.io\/blog\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Aspect Based Sentiment Analysis" />
+<meta property="og:description" content="In this post I report on approaches to ABSA as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my implementation of both BERT-SPC and BERT-ADA.">
+<meta property="og:url" content="https://nadjet.github.io/blog/posts/absa/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Nadjet&#39;s NLP Stuff" />
+
+  <meta name="twitter:title" content="Aspect Based Sentiment Analysis" />
+  <meta name="twitter:description" content="In this post I report on approaches to ABSA as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.62.2" />
+  <link rel="alternate" href="https://nadjet.github.io/blog/index.xml" type="application/rss+xml" title="Nadjet&#39;s NLP Stuff"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://nadjet.github.io/blog/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://nadjet.github.io/blog/css/syntax.css" /><link rel="stylesheet" href="https://nadjet.github.io/blog/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://nadjet.github.io/blog/">Nadjet&#39;s NLP Stuff</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="home" href="/blog/">home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="about me" href="/blog/about/">about me</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Aspect Based Sentiment Analysis</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>In this post I report on <a href="#approaches">approaches to ABSA</a> as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my <a href="#experiments">implementation</a> of both BERT-SPC and BERT-ADA.</p>
+<h1 id="what-is-absa">What is ABSA?</h1>
+<p>Example: “The dessert in this restaurant is good but the service is poor”.</p>
+<p>In this review sentence, sentiments (i.e., <strong>polarity</strong>) are expressed towards different “<strong>aspects</strong>” of the domain, namely “food” with a positive polarity, and “service” with a negative polarity.</p>
+<h1 id="absa-vs-tabsa">ABSA vs TABSA</h1>
+<p>ABSA is different from TABSA (<strong>Target Aspect Based Sentiment Analysis</strong>). In TABSA,  there is a target, say, a specific location, and aspect-polarity pairs associated with it. You might say:</p>
+<pre><code>“Burger King has excellent hamburgers but lousy nuggets whereas MacDonald’s has fantastic nuggets and mediocre burgers.”. 
+</code></pre>
+<p>In this sentence you have target “Burger King” associated with an aspect sequence “hamburgers” with polarity “positive”, and with an aspect sequence “nuggets” with polarity “negative”. You also have target “MacDonald’s” with positive polarity on “nuggets” and negative polarity on “burgers”.</p>
+<h1 id="two-tasks">Two tasks</h1>
+<p>There are 2 tasks associated with ABSA:</p>
+<ol>
+<li>Determining what are the aspects. This can be done either by detecting the aspect category, i.e., <strong>Aspect Category Detection</strong> (ACD), or by extracting terms related to aspects, i.e., <strong>Aspect Term Extraction (ATE).</strong></li>
+<li>Determining the polarity of each aspect = <strong>Aspect Polarity Detection</strong> (APC)</li>
+</ol>
+<p>ACD can be performed with <strong>multi-label classification</strong> task, i.e., assigning the entire review labels such as Food, Service, etc.</p>
+<p>ATE can be performed using <strong>Sequence Labellin</strong>g like in Named Entity Recognition, where the sequence of tokens under review is detected in-situ such as terms “dessert”, “service”, “nuggets”, “hamburgers”. However ATE is dependent on having an annotated dataset which is costly to build.</p>
+<p>Polarity can be assigned to each aspect-category or to each aspect-target aka sequence of tokens.</p>
+<h1 id="datasets">Datasets</h1>
+<h2 id="semeval-2014">Semeval 2014</h2>
+<p><a href="https://alt.qcri.org/semeval2014/task4/">SEMEVAL-2014</a> dataset contains short restaurant reviews where aspect term sequences are identified and assigned a polarity, as shown in the example below.</p>
+<pre><code>   &lt;sentence id=&quot;1634&quot;&gt;
+        &lt;text&gt;The food is uniformly exceptional, with a very capable kitchen which will proudly whip up whatever you feel like eating, whether it's on the menu or not.&lt;/text&gt;
+        &lt;aspectTerms&gt;
+            &lt;aspectTerm term=&quot;food&quot; polarity=&quot;positive&quot; from=&quot;4&quot; to=&quot;8&quot;/&gt;
+            &lt;aspectTerm term=&quot;kitchen&quot; polarity=&quot;positive&quot; from=&quot;55&quot; to=&quot;62&quot;/&gt;
+            &lt;aspectTerm term=&quot;menu&quot; polarity=&quot;neutral&quot; from=&quot;141&quot; to=&quot;145&quot;/&gt;
+        &lt;/aspectTerms&gt;
+        &lt;aspectCategories&gt;
+            &lt;aspectCategory category=&quot;food&quot; polarity=&quot;positive&quot;/&gt;
+        &lt;/aspectCategories&gt;
+    &lt;/sentence&gt;
+</code></pre><h1 id="a-nameapproachesaapproaches-to-polarity-detection"><!-- raw HTML omitted --><!-- raw HTML omitted -->Approaches to Polarity Detection</h1>
+<p>Approaches are summarized  by <a href="https://paperswithcode.com/sota/aspect-based-sentiment-analysis-on-semeval">this page</a> on the Semeval 2014 task 4 subtask 2 (polarity detection on restaurants dataset) by this graph (as of January 2021).</p>
+<!-- raw HTML omitted -->
+<p>Given this graph, it makes sense to investigate BERT-SPC and then BERT-ADA which is build on top of BERT-SPC.</p>
+<p><a href="https://arxiv.org/pdf/1912.07976.pdf">LCF-ATEPC</a> consists of Joint Learning of polarity detection and aspect term extraction with the best SOTA performance (see <a href="https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis">github</a> project).</p>
+<h2 id="bert-sentence-pair-classification-bert-spc">BERT Sentence Pair Classification (BERT-SPC)</h2>
+<p>This approach presented in <a href="https://www.aclweb.org/anthology/N19-1035/">this paper</a> (2019) consists in representing the sentence and aspect as a sentence pair, which must be classified as one of the polarity values.</p>
+<p>So the sentence S: “The dessert in this restaurant is good but the service is poor”.
+Is codified as “[CLS] S [SEP] food [SEP]” with polarity class value “positive” and “[CLS] S [SEP] service [SEP]” with polarity class  value “negative”.</p>
+<p>In addition all other aspects are codified in this sentence, for example “[CLS] S [SEP] price [SEP]” with polarity “none”.</p>
+<p>Although initially counter-intuitive, given that “none” is not a polarity, it allows to gIve a value which is neither “positive”, “negative” or “neutral” when the sentence is not about any of the aspects, e.g., “I love cats”.</p>
+<h2 id="domain-adaptation-with-bert-language-model-fine-tuning-bert-ada">Domain Adaptation with Bert Language Model Fine-Tuning (BERT-ADA)</h2>
+<p>In <a href="https://arxiv.org/pdf/1908.11860.pdf">this paper</a> the authors use BERT-SPC, but in order to address the issue of small training set typical of ABSA domains, they first perform fine-tuning of the language model with a large dataset before training the ABSA classifier (github project is <a href="https://github.com/deepopinion/domain-adapted-atsc">here</a>). The first fine-tuning is done on a masked word and next sentence prediction tasks and use the Amazon Reviews (1.8GB of review + 187mb of metadata) and/or the Yelp Restaurant Reviews (3.9GB of reviews). They experiment with different domains as in-domain and cross-domain training and evaluation, and with different, mainly BERT architectures.</p>
+<p>Their results show they get better performance  when using fine-tuning on a related dataset before classification (e.g., plain BERT sentence pair ABSA).</p>
+<!-- raw HTML omitted -->
+<p>For example, the BERT-base is the Bert Sentence Pair classification described earlier is according to the author the same as the BERT-SPC (and results are similar). When fine-tuning on Yelp Restaurants dataset, and then training the classifier on semeval 2014 restaurant reviews (so in-domain), the F-score in 80.05 and accuracy is 87.14, which is higher than BERT-base/SPC accuracy of 84.92 and F-score of 76.93.</p>
+<h1 id="a-nameexperimentsaexperiments-with-polarity-detection"><!-- raw HTML omitted --><!-- raw HTML omitted -->Experiments with Polarity Detection</h1>
+<h2 id="applying-bert-spc">Applying BERT-SPC</h2>
+<p><a href="https://colab.research.google.com/drive/1bNjIzX0YCssgQN0YPIMFB_2KpqbNuLNU">This notebook</a> implements BERT-SPC with tensorflow 2 on the Semeval 2014 Restaurant Reviews Dataset.</p>
+<p>The results of experiment 2 (including a “none” value when the text is not about the aspect) per polarity value is the following:</p>
+<!-- raw HTML omitted -->
+<p>Despite an overall F1 score of 89%, positive polarity has an F1 score of 72% and negative polarity has an F1 score of 51%.</p>
+<p>The results of experiment 1 per polarity value is the following:</p>
+<!-- raw HTML omitted -->
+<p>In this case the positive F1 score is 87% and the negative is 72.</p>
+<h2 id="applying-bert-ada">Applying BERT-ADA</h2>
+<p>We fine-tune the BERT language model with the <a href="https://www.yelp.com/dataset/download">Yelp</a> dataset of restaurant reviews (domain adaptation) before applying BERT-SPC.</p>
+<p>The Bert code for fine-tuning pretrained language model is implemented for tensorflow 1.</p>
+<h3 id="preprocessing">Preprocessing</h3>
+<p><strong>Step 1:</strong></p>
+<p>To extract reviews about restaurants from the Yelp review file <code>yelp_academic_dataset_review.json</code>, we filter reviews by business category Restaurant via the <code>yelp_academic_dataset_business.json</code> file. This can be done with code <a href="https://github.com/nadjet/domain-adapted-atsc/blob/master/prepare_restaurant_reviews.py">here</a>.</p>
+<p><strong>Step 2:</strong></p>
+<p>Next the restaurant reviews dataset is preprocessed using a script provided in the <a href="https://github.com/deepopinion/domain-adapted-atsc">github project</a>&lsquo;s page and consists in removing reviews with less than 2 sentences, to be compatible with the BERT next sentence prediction task, using spacy sentence tokenizer.
+The <a href="https://github.com/deepopinion/domain-adapted-atsc/blob/master/prepare_restaurant_reviews.py">code</a> provided in the github is not parallelized despite using Spacy’s n_threads property in nlp.pipe call. <a href="https://github.com/nadjet/domain-adapted-atsc/blob/master/prepare_restaurant_reviews.py">Here</a> is the same code with the script parallelized.
+After extracting and processing the reviews for fine-tuning we get 1,243,724 restaurant reviews consisting of 10 million sentences.</p>
+<p><strong>Step 3:</strong></p>
+<p>The dataset is sharded into smaller files of 25k lines and each file is fed to <a href="https://github.com/google-research/bert/blob/master/create_pretraining_data.py">this script</a> from <a href="https://github.com/google-research/bert">Google Bert</a> which creates training data for fine-tuning the language model. This file takes as input a single file, and so it must be applied on each of the sharded files, by script bulk_create_pretraining_data.py, which also runs on multiple cores.
+The script creates the input, mask and segment sequences for each sentence pair, and replaces up to a maximum number tokens with “[MASK]” as the language model prediction task for fine tuning. This number, which is max_predictions_per_seq is set to be max_seq_length * mask_lm_prob, as specified in BERT documentation, which amounts to roughly 40 (256*0.15).</p>
+<h3 id="language-model-fine-tuning">Language model fine-tuning</h3>
+<p>Next, the script <code>run_pretraining.py</code> is called to fine-tune the Bert language model, with same max_seq_length (256) and max_predictions_per_seq (40) values.</p>
+<p>This stage was done on AWS. The resulting model is in tensorflow 1.15.</p>
+<p>It took 1h30 to train 10k steps with max seq length = 256 and max_predictions_per_seq=40 and num_warmup_step=50 and learning rate=5e-5 and batch size=16. I get:</p>
+<pre><code>loss = 2.230954
+masked_lm_accuracy = 0.60585546
+masked_lm_loss = 1.8885055
+next_sentence_accuracy = 0.83875
+next_sentence_loss = 0.33771423
+</code></pre><p>We can probably get higher masked word and next sentence prediction accuracy by training longer (&gt;10k steps).</p>
+<h3 id="fine-tuning-for-classification">Fine-tuning for classification</h3>
+<p>We can use the model obtained in the previous step (language model fine-tuning) to train a classifier as in BERT-SPC before, and we should get better results.</p>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://nadjet.github.io/blog//tags/bert/">bert</a>&nbsp;
+            
+              <a href="https://nadjet.github.io/blog//tags/absa/">ABSA</a>&nbsp;
+            
+              <a href="https://nadjet.github.io/blog//tags/domain-adaptation/">domain adaptation</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://nadjet.github.io/blog/posts/neo4j_gembeds/" data-toggle="tooltip" data-placement="top" title="Node similarity with graph embeddings using Node2Vec">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://nadjet.github.io/blog/posts/masters_topics_q1_2021/" data-toggle="tooltip" data-placement="top" title="Data Science Projects (Q1-2021)">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://nadjet.github.io/blog/">Nadjet&#39;s NLP Stuff</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.62.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://nadjet.github.io/blog/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://nadjet.github.io/blog/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

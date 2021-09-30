@@ -1,25 +1,24 @@
 ---
+
 title: "Aspect Based Sentiment Analysis"
-
 date: 2020-04-30T14:34:18+01:00
-
 tags: ["bert", "ABSA", "domain adaptation"]
-
 draft: false
+
 ---
 
-# Aspect Based Sentiment Analysis
+In this post I report on [approaches to ABSA](#approaches) as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my [implementation](#experiments) of both BERT-SPC and BERT-ADA.
 
-Here I report on [approaches to ABSA](#approaches) as a Bert Sentence Pair Classification (BERT-SPC) problem together with domain adaptation of the Bert language model (BERT-ADA). I also present my [implementation](#experiments) of both BERT-SPC and BERT-ADA.
-
-## What is ABSA?
+ <!--more-->
+ 
+# What is ABSA?
 
 Example: “The dessert in this restaurant is good but the service is poor”.
 
 In this review sentence, sentiments (i.e., **polarity**) are expressed towards different “**aspects**” of the domain, namely “food” with a positive polarity, and “service” with a negative polarity.
 
 
-## ABSA vs TABSA 
+# ABSA vs TABSA 
 
 ABSA is different from TABSA (**Target Aspect Based Sentiment Analysis**). In TABSA,  there is a target, say, a specific location, and aspect-polarity pairs associated with it. You might say: 
 
@@ -29,7 +28,7 @@ ABSA is different from TABSA (**Target Aspect Based Sentiment Analysis**). In TA
 In this sentence you have target “Burger King” associated with an aspect sequence “hamburgers” with polarity “positive”, and with an aspect sequence “nuggets” with polarity “negative”. You also have target “MacDonald’s” with positive polarity on “nuggets” and negative polarity on “burgers”.
 
 
-## Two tasks
+# Two tasks
 
 There are 2 tasks associated with ABSA:
 
@@ -45,10 +44,10 @@ Polarity can be assigned to each aspect-category or to each aspect-target aka se
 
 
 
-## Datasets
+# Datasets
 
 
-### Semeval 2014
+## Semeval 2014
 
 [SEMEVAL-2014](https://alt.qcri.org/semeval2014/task4/) dataset contains short restaurant reviews where aspect term sequences are identified and assigned a polarity, as shown in the example below.
 
@@ -69,7 +68,7 @@ Polarity can be assigned to each aspect-category or to each aspect-target aka se
 
 
 
-## <a name="approaches"></a>Approaches to Polarity Detection
+# <a name="approaches"></a>Approaches to Polarity Detection
 
 Approaches are summarized  by [this page](https://paperswithcode.com/sota/aspect-based-sentiment-analysis-on-semeval) on the Semeval 2014 task 4 subtask 2 (polarity detection on restaurants dataset) by this graph (as of January 2021).
 
@@ -81,7 +80,7 @@ Given this graph, it makes sense to investigate BERT-SPC and then BERT-ADA which
 
 [LCF-ATEPC](https://arxiv.org/pdf/1912.07976.pdf) consists of Joint Learning of polarity detection and aspect term extraction with the best SOTA performance (see [github](https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis) project).
 
-### BERT Sentence Pair Classification (BERT-SPC)
+## BERT Sentence Pair Classification (BERT-SPC)
 
 This approach presented in [this paper](https://www.aclweb.org/anthology/N19-1035/) (2019) consists in representing the sentence and aspect as a sentence pair, which must be classified as one of the polarity values.
 
@@ -92,7 +91,7 @@ In addition all other aspects are codified in this sentence, for example “[CLS
 
 Although initially counter-intuitive, given that “none” is not a polarity, it allows to gIve a value which is neither “positive”, “negative” or “neutral” when the sentence is not about any of the aspects, e.g., “I love cats”.
 
-### Domain Adaptation with Bert Language Model Fine-Tuning (BERT-ADA)
+## Domain Adaptation with Bert Language Model Fine-Tuning (BERT-ADA)
 
 In [this paper](https://arxiv.org/pdf/1908.11860.pdf) the authors use BERT-SPC, but in order to address the issue of small training set typical of ABSA domains, they first perform fine-tuning of the language model with a large dataset before training the ABSA classifier (github project is [here](https://github.com/deepopinion/domain-adapted-atsc)). The first fine-tuning is done on a masked word and next sentence prediction tasks and use the Amazon Reviews (1.8GB of review + 187mb of metadata) and/or the Yelp Restaurant Reviews (3.9GB of reviews). They experiment with different domains as in-domain and cross-domain training and evaluation, and with different, mainly BERT architectures.
 
@@ -102,9 +101,9 @@ Their results show they get better performance  when using fine-tuning on a rela
 
 For example, the BERT-base is the Bert Sentence Pair classification described earlier is according to the author the same as the BERT-SPC (and results are similar). When fine-tuning on Yelp Restaurants dataset, and then training the classifier on semeval 2014 restaurant reviews (so in-domain), the F-score in 80.05 and accuracy is 87.14, which is higher than BERT-base/SPC accuracy of 84.92 and F-score of 76.93.
 
-## <a name="experiments"></a>Experiments with Polarity Detection
+# <a name="experiments"></a>Experiments with Polarity Detection
 
-### Applying BERT-SPC
+## Applying BERT-SPC
 
 [This notebook](https://colab.research.google.com/drive/1bNjIzX0YCssgQN0YPIMFB_2KpqbNuLNU) implements BERT-SPC with tensorflow 2 on the Semeval 2014 Restaurant Reviews Dataset.
 
@@ -120,13 +119,13 @@ The results of experiment 1 per polarity value is the following:
 
 In this case the positive F1 score is 87% and the negative is 72.
 
-### Applying BERT-ADA
+## Applying BERT-ADA
 
 We fine-tune the BERT language model with the [Yelp](https://www.yelp.com/dataset/download) dataset of restaurant reviews (domain adaptation) before applying BERT-SPC. 
 
 The Bert code for fine-tuning pretrained language model is implemented for tensorflow 1. 
 
-#### Preprocessing
+### Preprocessing
 
 **Step 1:**
 
@@ -143,7 +142,7 @@ After extracting and processing the reviews for fine-tuning we get 1,243,724 res
 The dataset is sharded into smaller files of 25k lines and each file is fed to [this script](https://github.com/google-research/bert/blob/master/create_pretraining_data.py) from [Google Bert](https://github.com/google-research/bert) which creates training data for fine-tuning the language model. This file takes as input a single file, and so it must be applied on each of the sharded files, by script bulk_create_pretraining_data.py, which also runs on multiple cores.
 The script creates the input, mask and segment sequences for each sentence pair, and replaces up to a maximum number tokens with “[MASK]” as the language model prediction task for fine tuning. This number, which is max_predictions_per_seq is set to be max_seq_length * mask_lm_prob, as specified in BERT documentation, which amounts to roughly 40 (256*0.15).
 
-#### Language model fine-tuning
+### Language model fine-tuning
 
 Next, the script `run_pretraining.py` is called to fine-tune the Bert language model, with same max_seq_length (256) and max_predictions_per_seq (40) values.
  
@@ -161,5 +160,5 @@ next_sentence_loss = 0.33771423
 
 We can probably get higher masked word and next sentence prediction accuracy by training longer (>10k steps).
 
-#### Fine-tuning for classification
+### Fine-tuning for classification
 We can use the model obtained in the previous step (language model fine-tuning) to train a classifier as in BERT-SPC before, and we should get better results.
