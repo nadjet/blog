@@ -13,7 +13,7 @@ A couple of weeks ago I attended virtually the EMNLP'2021 Conference. This is th
 On the negative side, technical network problems meant the presentations were often recorded with no time for questions, and the likeliness that you will bump into someone you know is less likely, although I enjoyed "stalking" presenters to their poster rooms in "Gather Town", the virtual conference venue :-)... 
 
 
-Below are some interesting talks I "attended" at the conference, organized by topic:
+Here are some interesting talks I "attended" at the conference, organized by topic:
 
 <!--more--> 
 
