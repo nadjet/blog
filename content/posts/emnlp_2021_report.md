@@ -1,7 +1,7 @@
 ---
 
 title: "My cherry-picked highlights from the EMNLP'21 Conference"
-date: 2020-11-20T20:17:02+01:00
+date: 2021-11-20T20:17:02+01:00
 draft: false
 tags: ["NLP", "conference"]
 
