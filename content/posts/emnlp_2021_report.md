@@ -8,12 +8,14 @@ tags: ["NLP", "conference"]
 
 ---
 
-A couple of weeks ago I attended virtually the EMNLP'2021 Conference. This is the first time I attend a conference virtually. I must admit  <!--more--> this is not without its advantages: cheaper registration fees, no Jet-Lag, the ability to get your brain blasted in the comfort of your own home, the ability to switch between sessions much more quickly than if it was in a physical setting, as well as in my experience, a more "intimate" one-to-one interaction during the poster sessions. 
+A couple of weeks ago I attended virtually the EMNLP'2021 Conference. This is the first time I attend a conference virtually. I must admit this is not without its advantages: cheaper registration fees, no Jet-Lag, the ability to get your brain blasted in the comfort of your own home, the ability to switch between sessions much more quickly than if it was in a physical setting, as well as in my experience, a more "intimate" one-to-one interaction during the poster sessions. 
 
 On the negative side, technical network problems meant the presentations were often recorded with no time for questions, and the likeliness that you will bump into someone you know is less likely, although I enjoyed "stalking" presenters to their poster rooms in "Gather Town", the virtual conference venue :-)... 
 
 
 Below are some interesting talks I "attended" at the conference, organized by topic:
+
+<!--more--> 
 
 - [Bias and Ethics](#bias)
 - [Language Models as Knowledge Bases](#lms_kbs)
