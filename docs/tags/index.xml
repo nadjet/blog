@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Nadjet&#39;s NLP Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jul 2021 14:18:55 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 20 Nov 2021 20:17:02 +0100</lastBuildDate>
     
 	<atom:link href="https://nadjet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>conference</title>
+      <link>https://nadjet.github.io/blog/tags/conference/</link>
+      <pubDate>Sat, 20 Nov 2021 20:17:02 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>https://nadjet.github.io/blog/tags/nlp/</link>
+      <pubDate>Sat, 20 Nov 2021 20:17:02 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/tags/nlp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>aircraft maintenance</title>
@@ -75,25 +93,7 @@
     </item>
     
     <item>
-      <title>conference</title>
-      <link>https://nadjet.github.io/blog/tags/conference/</link>
-      <pubDate>Fri, 20 Nov 2020 20:17:02 +0100</pubDate>
-      
-      <guid>https://nadjet.github.io/blog/tags/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>https://nadjet.github.io/blog/tags/nlp/</link>
-      <pubDate>Fri, 20 Nov 2020 20:17:02 +0100</pubDate>
-      
-      <guid>https://nadjet.github.io/blog/tags/nlp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bert</title>
+      <title>Bert</title>
       <link>https://nadjet.github.io/blog/tags/bert/</link>
       <pubDate>Thu, 22 Oct 2020 21:48:00 +0100</pubDate>
       
@@ -111,7 +111,7 @@
     </item>
     
     <item>
-      <title>dbpedia</title>
+      <title>DBPedia</title>
       <link>https://nadjet.github.io/blog/tags/dbpedia/</link>
       <pubDate>Sat, 10 Oct 2020 12:11:38 +0100</pubDate>
       
