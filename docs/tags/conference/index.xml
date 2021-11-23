@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conference on Nadjet&#39;s NLP Stuff</title>
+    <link>https://nadjet.github.io/blog/tags/conference/</link>
+    <description>Recent content in conference on Nadjet&#39;s NLP Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2020 20:17:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://nadjet.github.io/blog/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My cherry-picked highlights from the EMNLP&#39;21 Conference</title>
+      <link>https://nadjet.github.io/blog/posts/emnlp_2021_report/</link>
+      <pubDate>Fri, 20 Nov 2020 20:17:02 +0100</pubDate>
+      
+      <guid>https://nadjet.github.io/blog/posts/emnlp_2021_report/</guid>
+      <description>&lt;p&gt;A couple of weeks ago I attended virtually the EMNLP&#39;2021 Conference. This is the first time I attend a conference virtually. I must admit&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
