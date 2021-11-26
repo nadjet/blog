@@ -13,17 +13,9 @@ A couple of weeks ago I attended virtually the EMNLP'2021 Conference. This is th
 On the negative side, technical network problems meant the presentations were often recorded with no time for questions, and the likeliness that you will bump into someone you know is less likely, although I enjoyed "stalking" presenters to their poster rooms in "Gather Town", the virtual conference venue :-)... 
 
 
-Here are some interesting talks I "attended" at the conference, organized by topic:
+Here are some interesting talks I "attended" at the conference, organized in the following topics: Bias and Ethics, Language Models as Knowledge Bases, Pattern Exploiting Training (PET), Datasets, Q/A and Text Mining.
 
 <!--more--> 
-
-- [Bias and Ethics](#bias)
-- [Language Models as Knowledge Bases](#lms_kbs)
-- [Pattern Exploiting Training (PET)](#pet)
-- [Datasets](#datasets)
-- [Question Answering](#q_a)
-- [Text mining](#text_mining)
-
 
 # <a name="bias"></a>Bias and Ethics 
 
